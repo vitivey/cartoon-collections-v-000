@@ -17,8 +17,9 @@ def summon_captain_planet(slogans)# code an argument here
   end
 end
 
-def long_planeteer_calls# code an argument here
+def long_planeteer_calls(long_slogans)# code an argument here
   # Your code here
+  long_slogans.any? {|word| word.length > 4}
 end
 
 def find_the_cheese# code an argument here
