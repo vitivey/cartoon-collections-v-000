@@ -28,6 +28,8 @@ def find_the_cheese(food)# code an argument here
   cheese_types.each do |type|
     if food.include?(type)
       return type
+    else
+      nil
     end
   end
 end
