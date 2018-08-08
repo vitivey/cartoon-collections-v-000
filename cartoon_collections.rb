@@ -7,9 +7,6 @@ def roll_call_dwarves(dwarves)# code an argument here
   puts list
 end
 
-#dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
-#roll_call_dwarves(dwarves)
-
 def summon_captain_planet(slogans)# code an argument here
   # Your code here
   slogans.map do |word|
@@ -26,10 +23,7 @@ def find_the_cheese(food)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.each do |type|
-    if food.include?(type)
-      return type
-    else
-      nil
-    end
+    return type if food.include?(type)
   end
+  nil
 end
